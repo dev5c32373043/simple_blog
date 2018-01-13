@@ -1,0 +1,20 @@
+body(style="background-color: #3f4c6b;font: 14px sans-serif;padding: 20px;") 
+  div.letter
+    p #{message}
+    a(href=link.href) #{link.text}
+style(type='text/css').
+  a{
+    cursor: pointer;
+    color: #26a69a;
+  }
+  .letter {
+    background: #343a40;
+    color: white;
+    box-shadow: 0 0 10px;
+    margin: 0 auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    width: 80%;
+  }

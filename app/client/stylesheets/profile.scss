@@ -1,0 +1,66 @@
+@import 'uploader';
+
+ul.nav li {
+  width: 50%;
+  text-align: center;
+  a{
+    color: #3f4c6b;
+    :focus{
+      color: #343a40;
+    }
+  }
+}
+
+.profile{
+  &-container{
+    @extend .card;
+    min-height: 100px;
+    h1{
+      align-self: center;
+    }
+    @media only screen and (max-width: 768px){
+      width: 100%;
+    }
+  }
+}
+
+.settings-form{
+  input{
+    width: 82%;
+  }
+  .row{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: inherit;
+  }
+  .password{
+    &-new{
+      width: 35%;
+      margin-left: 30% !important;
+      input{
+        width: 100%;
+      }
+    }
+    &-current{
+      width: 35%;
+      margin-left: 0% !important;
+      input{
+        width: 100% !important;
+      }
+    }
+  }
+  .form-group{
+    margin-left: 15%;
+  }
+}
+.btn-block{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+.modal-footer{
+  button{
+    width: 50%;
+  }
+}

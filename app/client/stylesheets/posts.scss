@@ -1,0 +1,56 @@
+.posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  .post{
+    animation: 1s ease-out 0s 1 slideIn;
+    width: 70%;
+    @media only screen and (max-width: 768px){
+      width: 100%;
+    }
+    .card{
+      border: 0.5px dotted #343a40;
+    }
+    img{
+      margin-top: 0;
+    }
+    .card-body{
+      max-height: 160px;
+      overflow: hidden;
+      .body-content{
+        max-height: 50px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .show-btn{
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      border-radius: 0;
+      cursor: pointer;
+    }
+    .edit-btn{
+      @extend .show-btn;
+      bottom: 114px;
+    }
+  }
+}
+
+pre{
+  background-color: #212529;
+  color: #f1f1f1;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

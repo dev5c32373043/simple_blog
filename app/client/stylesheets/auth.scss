@@ -1,0 +1,15 @@
+.auth-form{
+  max-width: 50%;
+  border-radius: 0;
+  margin: 15% 25% 0 24%;
+  padding: 2%;
+  button{
+    width: 60%;
+  }
+  @media only screen and (max-width: 768px){
+    width: 100%;
+    max-width: 100%;
+    margin: 35% 25% 0 0%;
+    padding: 5%;
+  }
+}

@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~quill/dist/quill.snow.css";
+@import "auth";
+@import "posts";
+@import "post-page";
+@import "profile";
+@import "errorPage";
+@import "loader";
+
+body{
+	background: -moz-linear-gradient(top, #3f4c6b 0%, #3f4c6b 100%);
+  background: -webkit-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%);
+  background: linear-gradient(to bottom, #3f4c6b 0%,#3f4c6b 100%);
+}
+
+.container{
+	@media only screen and (max-width: 768px){
+		padding: 0;
+	}
+}
+
+nav{
+	height: 70px;
+}
+
+.alert-dark{
+	border-radius: 0px;
+	color: #f1f1f1;
+	background-color: #343a40;
+	transition: 1s ease-out;
+}
+.btn.btn-outline-light{
+	border-radius: 0;
+}
+.is-invalid{
+	border-color: red;
+}
+.card{
+	border: 0;
+
+	.card-img-top{
+  	border: 0;
+	}
+}
+
+::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #343a40;
+	border-radius: 10px;
+	background-image: -webkit-linear-gradient(90deg,
+	                      rgba(0, 0, 0, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(0, 0, 0, .2) 50%,
+											  rgba(0, 0, 0, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
